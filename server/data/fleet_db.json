@@ -1,0 +1,62 @@
+[
+    {
+        "id": "8261",
+        "fleet": {
+            "carType": "SUV",
+            "carName": "Luxury Sedan (Town Car or Similar)",
+            "productionDate": "03/03/2022 15:59",
+            "carMiles": "22,101",
+            "contactPhone": "+998907981800"
+        }
+    },
+    {
+        "id": "7288",
+        "fleet": {
+            "carType": "BMW",
+            "carName": "BMW or Mercedes",
+            "productionDate": "15/05/2025 17:30",
+            "carMiles": "14,000",
+            "contactPhone": "+998947981800"
+        }
+    },
+    {
+        "id": "1677",
+        "fleet": {
+            "carType": "SUV",
+            "carName": "Cadillac Escalade",
+            "productionDate": "20/05/2025 17:30",
+            "carMiles": "12,000",
+            "contactPhone": "+998901745252"
+        }
+    },
+    {
+        "id": "1902",
+        "fleet": {
+            "carType": "VAN",
+            "carName": "Luxury Van",
+            "productionDate": "06/05/2025 17:30",
+            "carMiles": "228,000",
+            "contactPhone": "+998901745252"
+        }
+    },
+    {
+        "id": "1401",
+        "fleet": {
+            "carType": "LIMO",
+            "carName": "Stretch Limousine",
+            "productionDate": "05/03/2023T16:19",
+            "carMiles": "8,500",
+            "contactPhone": "+998981745258"
+        }
+    },
+    {
+        "id": "8162",
+        "fleet": {
+            "carName": "Cadillac Escalade",
+            "productionDate": "19/03/2024T17:44",
+            "carType": "SUV",
+            "contactPhone": "+998977981800",
+            "carMiles": "14000"
+        }
+    }
+]

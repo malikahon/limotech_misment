@@ -1,0 +1,78 @@
+/* so that the background image of the forms matches the background image of the index page */
+body {
+    background-image: url('https://4kwallpapers.com/images/wallpapers/windows-11-dark-mode-abstract-background-black-background-2880x1800-8710.jpg');
+}
+/* the container mainly creates a width, centers the form, and creates a different color and circular edges so the form looks a tad bit more professional */
+.container {
+    max-width: 600px;
+    margin: 5% auto;
+    padding: 20px;
+    background-color: #424242;
+    border-radius: 12px; 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+  }
+  /* this is for the title of the form, just making it white and centering */
+  h1 {
+    text-align: center;
+    color: #ffffff; 
+    margin-bottom: 30px; 
+  }
+  /* just making sure the labels look good */ 
+  .form-label {
+    display: block; 
+    margin-bottom: .5rem;
+    font-weight: bold;
+  }
+  /* just making sure the inputs aren't all wonky */
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #616161;
+    background-color: #555; 
+    color: #fff; 
+    margin-bottom: 15px;
+  }
+  /* this is just for more design stuff, focus aspects etc */
+  .form-control:focus {
+    outline: none; 
+    border-color: #80bdff; 
+    box-shadow: 0 0 0 0.2rem rgba(128,189,255,.25);
+  }
+  .input-group-text {
+    background-color: #616161; 
+    color: #fff; 
+    border: none; 
+  }
+  /* button styling - it just looks a bit more cohesive this way */
+  .btn {
+    padding: 10px 20px;
+    font-size: 16px; 
+    border-radius: 5px;
+    margin-top: 20px; 
+  }
+  /* a little bit of bootstrap usage throughout */
+  .btn-success {
+    background-color: #28a745; 
+  }
+  .btn-primary {
+    background-color: #007bff;
+  }
+  .btn-success:hover,
+  .btn-primary:hover {
+    opacity: 0.8;
+  }
+  /* margins */
+  .mt-5 { margin-top: 3rem; } 
+  .mb-3 { margin-bottom: 1rem; } 
+  /* adjusting the date time picker  */
+  .fas.fa-calendar-alt {
+    color: #fff; 
+  }
+  /* making the design responsive */
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+      margin-top: 10%;
+    }
+  }

@@ -1,0 +1,77 @@
+include ../head.pug
+doctype html 
+head
+    link(rel='stylesheet' href='/css/forms.css')
+body
+    .container.mt-5
+        h1 #{mode}
+        .mb-3
+            label(for="carType" class="form-label") Car Type
+            input(type="text" class="form-control" id="carType" name="carType" required)
+        .mb-3
+            label(for="carName" class="form-label") Car Name
+            input(type="text" class="form-control" id="carName" name="carName" required)
+        .mb-3
+            label(for="productionDate" class="form-label") Production Date
+            .input-group.date(id="datetimepicker1" data-target-input="nearest")
+                input(type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1" id="productionDate" name="productionDate" required)
+                .input-group-append(data-target="#datetimepicker1" data-toggle="datetimepicker")
+                    .input-group-text
+                        i.fas.fa-calendar-alt
+        .mb-3
+            label(for="carMiles" class="form-label") Car Miles
+            input(type="text" class="form-control" id="carMiles" name="carMiles" required)
+        .mb-3
+            label(for="contactPhone" class="form-label") Contact Phone
+            input(type="tel" class="form-control" id="contactPhone" name="contactPhone" required)
+        button(type="submit" class="btn btn-success" onclick="submitForm()") #{mode === 'Update' ? 'Update' : 'Add'}
+        span &nbsp;
+        button(type="submit" class="btn btn-primary" onclick="window.location.href='/'") Back to list
+
+    script.
+        const format = 'DD/MM/YYYY HH:mm'
+        const picker = new tempusDominus.TempusDominus(document.getElementById('datetimepicker1'),{
+            localization: {
+                'locale': 'fr'
+            }
+        })
+        picker.dates.formatInput = function(date) {
+            return moment(date).format(format)
+        }
+
+        if ("#{mode}" === "Update") {
+            const fleetData = !{JSON.stringify(fleetData || {})}.fleet;
+            document.getElementById('carName').value = fleetData.carName || '';
+
+            picker.dates.setValue(
+                new tempusDominus.DateTime(moment(fleetData.productionDate, format))
+            );
+
+            document.getElementById('carType').value = fleetData.carType || '';
+            document.getElementById('contactPhone').value = fleetData.contactPhone || '';
+            document.getElementById('carMiles').value = fleetData.carMiles || '';
+        }
+
+        function submitForm() {
+            const fleetData = {
+                carName: document.getElementById('carName').value,
+                productionDate: document.getElementById('productionDate').value,
+                carType: document.getElementById('carType').value,
+                contactPhone: document.getElementById('contactPhone').value,
+                carMiles: document.getElementById('carMiles').value,
+            };
+
+            const url = "#{mode}" === "Update" ? `/api/fleet/${!{JSON.stringify(fleetData || {})}.id}` : '/api/fleet';
+            const method = "#{mode}" === "Update" ? 'put' : 'post';
+
+            axios[method](url, fleetData).then(response => {
+                alert('Success!');
+                location.href = '/'
+            })
+            .catch(error => {
+                if(error.response)
+                    alert(JSON.stringify(error.response.data.errors))
+                else
+                    alert(error)
+            });
+        }
