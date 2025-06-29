@@ -5,7 +5,7 @@
             "carType": "SUV",
             "carName": "Luxury Sedan (Town Car or Similar)",
             "productionDate": "03/03/2022 15:59",
-            "carMiles": "22,101",
+            "carMiles": "22500",
             "contactPhone": "+998907981800"
         }
     },
@@ -17,26 +17,6 @@
             "productionDate": "15/05/2025 17:30",
             "carMiles": "14,000",
             "contactPhone": "+998947981800"
-        }
-    },
-    {
-        "id": "1677",
-        "fleet": {
-            "carType": "SUV",
-            "carName": "Cadillac Escalade",
-            "productionDate": "20/05/2025 17:30",
-            "carMiles": "12,000",
-            "contactPhone": "+998901745252"
-        }
-    },
-    {
-        "id": "1902",
-        "fleet": {
-            "carType": "VAN",
-            "carName": "Luxury Van",
-            "productionDate": "06/05/2025 17:30",
-            "carMiles": "228,000",
-            "contactPhone": "+998901745252"
         }
     },
     {
@@ -57,6 +37,76 @@
             "carType": "SUV",
             "contactPhone": "+998977981800",
             "carMiles": "14000"
+        }
+    },
+    {
+        "id": "2536",
+        "fleet": {
+            "carType": "SUV",
+            "carName": "Luxury Sedin (Town Car or Similar)",
+            "productionDate": "16/06/2025 00:00",
+            "carMiles": "223",
+            "contactPhone": "+998907981800"
+        }
+    },
+    {
+        "id": "3866",
+        "fleet": {
+            "carType": "alksdjf",
+            "carName": "Luxury Sedan (Town Car or Similar)",
+            "productionDate": "10/06/2025 00:00",
+            "carMiles": "22",
+            "contactPhone": "+998947981800"
+        }
+    },
+    {
+        "id": "9912",
+        "fleet": {
+            "carType": "Malikahon",
+            "carName": "Vahobova",
+            "productionDate": "01/06/2025 00:00",
+            "carMiles": "14",
+            "contactPhone": "+998907981878"
+        }
+    },
+    {
+        "id": "3397",
+        "fleet": {
+            "carType": "SUV",
+            "carName": "Sedan",
+            "productionDate": "01/06/2025 00:00",
+            "carMiles": "22",
+            "contactPhone": "+998907981800"
+        }
+    },
+    {
+        "id": "0179",
+        "fleet": {
+            "carType": "alksdjf",
+            "carName": "Luxury Sedin (Town Car or Similar)",
+            "productionDate": "10/06/2025 00:00",
+            "carMiles": "20000",
+            "contactPhone": "+998947981800"
+        }
+    },
+    {
+        "id": "1074",
+        "fleet": {
+            "carType": "SUV",
+            "carName": "Luxury Sedin (Town Car or Similar)",
+            "productionDate": "18/06/2025 00:00",
+            "carMiles": "22,000",
+            "contactPhone": "+998907981800"
+        }
+    },
+    {
+        "id": "5237",
+        "fleet": {
+            "carType": "SUV",
+            "carName": "Luxury Sedin (Town Car or Similar)",
+            "productionDate": "24/06/2025 00:00",
+            "carMiles": "alskdjf",
+            "contactPhone": "+998907981878"
         }
     }
 ]

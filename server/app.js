@@ -21,8 +21,6 @@ app.use(
         // credentials: true,
     })
 );
-// Set the view engine for web routes
-app.set('view engine', 'pug');
 
 app.use('/css', express.static('public/css'))
 app.use('/js', express.static('public/js'))
@@ -39,4 +37,4 @@ app.use((req, res) => {
 });
 
 const port = 3000;
-app.listen(port, () => console.log(`Server running on port ${port}`));
+app.listen(port, () => console.log(`Server running`));

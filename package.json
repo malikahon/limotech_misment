@@ -12,6 +12,8 @@
     "concurrently": "^8.2.2"
   },
   "dependencies": {
+    "antd": "^5.26.1",
+    "dayjs": "^1.11.13",
     "nodemon": "^3.1.10"
   }
 }
